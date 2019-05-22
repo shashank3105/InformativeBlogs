@@ -14,27 +14,27 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses informativeblogs_header_style()
+ * @uses informative_blogs_header_style()
  */
-function informativeblogs_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'informativeblogs_custom_header_args', array(
+function informative_blogs_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'informative_blogs_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'informativeblogs_header_style',
+		'wp-head-callback'       => 'informative_blogs_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'informativeblogs_custom_header_setup' );
+add_action( 'after_setup_theme', 'informative_blogs_custom_header_setup' );
 
-if ( ! function_exists( 'informativeblogs_header_style' ) ) :
+if ( ! function_exists( 'informative_blogs_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see informativeblogs_custom_header_setup().
+	 * @see informative_blogs_custom_header_setup().
 	 */
-	function informativeblogs_header_style() {
+	function informative_blogs_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

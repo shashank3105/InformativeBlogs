@@ -22,24 +22,24 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'informativeblogs' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'informative-blogs' ); ?></a>
 
 	<header id="masthead" class="site-header fixed-top">
 		<div class="container">
 			<div class="header-inner">
 				<div class="site-branding">
 					<?php
-					the_custom_logo();
-					if ( is_front_page() && is_home() ) :
-						?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php
-					else :
-						?>
-						<p class="site-title h1"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
-					endif;
-				?>
+						the_custom_logo();
+						if ( is_front_page() && is_home() ) :
+							?>
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<?php
+						else :
+							?>
+							<p class="site-title h1"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+							<?php
+						endif;
+					?>
 				</div><!-- .site-branding -->			
 				<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-light">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,3 +59,9 @@
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
+				<?php if ( get_header_image() ) : ?>
+					<div class="header-image col-lg-12">
+						<img src="<?php echo esc_url( get_header_image() ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>" />
+					</div>
+				<?php endif; ?>
+

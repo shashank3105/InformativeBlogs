@@ -22,8 +22,8 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				informativeblogs_posted_on();
-				informativeblogs_posted_by();
+				informative_blogs_posted_on();
+				informative_blogs_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -47,6 +47,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer text-center">
-		<?php informativeblogs_entry_footer(); ?>
+		<?php informative_blogs_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

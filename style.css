@@ -1,14 +1,14 @@
 /*!
 Theme Name: Informative Blogs
-Theme URI: https://github.com/shashank3105/
-Author: Shashank Panchal
-Author URI: https://profiles.wordpress.org/shashank3105/
-Description: Description
-Version: 1.0.0
+Theme URI: https://github.com/shashank3105/InformativeBlogs
+Author: @shashank3105
+Author URI: https://shashankpanchal.wordpress.com/
+Description: The Informative Blogs is a creative blog theme for writers and bloggers. It is fully compatible with mobile phones, desktop computers and tablets such as iPads. All writers and bloggers can use this theme as a newspaper or magazine where you post your news about your personal life, food, entertainment, gaming or anything else.
+Version: 1.0.1
 License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: informativeblogs
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: informative-blogs
+Tags: blog, news, custom-header
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -26,7 +26,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*--------------------------------------------------------------
 >>> Reset Style
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 body {
 	color: #696969;
@@ -72,6 +71,20 @@ h1 a:hover, .h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:ho
 }
 
 input[type="search"], input[type="text"], input[type="email"], input[type="url"] {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+select {
 	display: block;
 	width: 100%;
 	padding: .375rem .75rem;
@@ -336,6 +349,18 @@ input[type=checkbox], input[type=radio] {
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
+}
+.logged-in .site-header {
+	top: 32px;
+}
+
+/* Header Image */
+.header-image {
+	margin-bottom: 30px;
+} 
+
+.header-image img {
+	width: 100%;
 }
 
 /* Site Footer */
@@ -602,6 +627,14 @@ input[type=checkbox], input[type=radio] {
 
 	.site-header .site-branding .site-title a {
 		font-size: 50%;
+		display: block;
+	}
+
+	body {
+		padding-top: 3.45rem;
+	}
+	.main-navigation .menu-menu-1-container {
+		top: 3.45rem;
 	}
 
 }
