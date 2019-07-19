@@ -1,11 +1,11 @@
 === Informative Blogs ===
 
 Contributors: shashank3105
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments
+Tags: blog, news, custom-header, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, editor-style, full-width-template, theme-options, threaded-comments
 
+Tested up to: 5.2.2
 Requires at least: 4.8
-Tested up to: 5.2.1
-Stable tag: 1.0.2
+Stable tag: 1.0.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,18 @@ Informative Blogs includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+= 1.0.6 - July 19 2019 =
+* Suggested changes by @rabmalin are done
+
+= 1.0.5 - July 19 2019 =
+* Suggested changes by @kafleg are done
+
+= 1.0.4 - June 19 2019 =
+* Suggested changes by @kabirajlamichhane are done
+
+= 1.0.3 - June 19 2019 =
+* Suggested changes by @kabirajlamichhane are done
+
 = 1.0.2 - June 19 2019 =
 * Suggested changes by @kabirajlamichhane are done
 
@@ -41,8 +53,12 @@ Informative Blogs includes support for Infinite Scroll in Jetpack.
 == Used 3rd party resources in the theme ==
 
 1. Bootstrap v4.0.0 (https://getbootstrap.com)
-2. Images used from pixabay.com (https://pxhere.com/)
+2. Images used from pxhere.com (https://pxhere.com/)
+
+=== Screenshot image ===
+
+https://pxhere.com/en/photo/1590369
 
 == Copyright ==
-Informative Blogs, Copyright 2019.
+Informative Blogs, Copyright 2019 shashank3105.
 Informative Blogs theme is distributed under the terms of the GNU GPL.
